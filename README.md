@@ -1,3 +1,11 @@
+# [Github pages](https://tarasmrsk.github.io/FinalMaket/)
+
+## [FirstMaket](https://github.com/tarasmrsk/FirstMaket)
+
+## [FinalMaket](https://github.com/tarasmrsk/FinalMaket)
+
+---
+
 # Webpack Static Site Starter Kit
 
 ## Требования к проекту
@@ -45,7 +53,7 @@ git init -b main
 git add . && git commit -m "initial commit"
 ```
 
-соединить git удаленный с локальным, *USER* (пользователь) и *REPO* (репозиторий)
+соединить git удаленный с локальным, _USER_ (пользователь) и _REPO_ (репозиторий)
 
 ```properties
 git remote add origin https://github.com/USER/REPO.git

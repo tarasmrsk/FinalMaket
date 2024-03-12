@@ -39,6 +39,7 @@
   position: relative;
   background-color: $secondary-color;
   border-radius: 6px;
+  box-sizing: border-box;
   border: 1px solid $smoky-white-color
 }
 
@@ -46,79 +47,6 @@
   cursor: pointer;
   border: 1px solid $light-turquoise-color
 }
-
-// .card-prices {
-//   box-sizing: border-box;
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding: 16px;
-//   width: 260px;
-//   height: 200px;
-// }
-
-// .table-prices {
-//   width: 100%;
-//   margin: 0 auto;
-//   font-size: 17px;
-//   line-height: 18px;
-//   letter-spacing: 0.2px;
-//   color: $black-blue-color;
-//   border-collapse: collapse;
-//   text-align: left;
-// }
-
-// .table-item {
-//   position: relative;
-//   height: 65px;
-// }
-
-// .menu-item {
-//   background-color: $secondary-color;
-// }
-
-// .table-item::after {
-//   content: '';
-//   width: 95%;
-//   height: 1px;
-//   background-color: $smoky-white-color;
-//   position: absolute;
-//   bottom: 0px;
-//   left: 2.5%;
-// }
-
-// .prices-menu,
-// .menu-text {
-//   vertical-align: middle;
-//   padding-left: 16px;
-// }
-
-// .button-table {
-//   margin-top: 16px;
-// }
-
-// .prices-title {
-//   font-size: 14px;
-//   line-height: 16px;
-//   color: $pale-blue-color;
-//   opacity: 0.72;
-// }
-
-// .prices-text {
-//   font-size: 14px;
-//   line-height: 18px;
-//   letter-spacing: 0.2px;
-//   color: $black-blue-color;
-// }
-
-// .button__prices {
-//   position: absolute;
-//   bottom: 16px;
-//   right: 16px;
-// }
-
-// .prices-text {
-//   margin-bottom: 16px;
-// }
 
 .swiper-pagination-bullet {
   width: 12px;
@@ -132,65 +60,70 @@
 
 @media (max-width: 768px) {
   .swiper {
-    display: flex;
-    width: 320px;
-    height: 100%;
-    padding-bottom: 32px;
-  }
+      display: flex;
+      width: 320px;
+      height: 100%;
+      padding-bottom: 32px;
+    }
+  
+    .swiper::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 100vh;
+      left: 296px;
+      z-index: 10;
+      background: linear-gradient(90deg, transparent, $primary-color);
+    }
+  
+    .swiper-wrapper {
+      display: flex;
+      gap: 0;
+    }
+  
+    .swiper-slide {
+      width: 240px;
+      margin-left: 16px;
+    }
+  
+    .slider-3 .swiper-slide {
+      width: 260px;
+      margin-left: 8px;
+    }
+  
+    .content-table {
+      display: none;
+    }
+  
+    .button-mode {
+      display: none;
+    }
 
-  .swiper::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 100vh;
-    left: 296px;
-    z-index: 10;
-    background: linear-gradient(90deg, transparent, $primary-color);
-  }
+}
 
-  .swiper-wrapper {
-    display: flex;
-    gap: 0;
-  }
+@media (min-width: 768px) and (max-width: 1120px){
 
   .swiper-slide {
-    width: 240px;
-    margin-left: 16px;
+    width: 224px;
   }
 
-  .card-equipment {
-    width: 240px;
-  }
-
-  .slider-3 .swiper-slide {
-    width: 260px;
-    margin-left: 8px;
-  }
-
-  .content-table {
-    display: none;
-  }
-
-  .button-mode {
+  .content-card{
     display: none;
   }
 
 }
 
-@media (min-width: 768px) {
-  .content-card {
-    display: none;
+@media (min-width: 1120px){
+  .swiper-slide {
+    width: 240px;
   }
-}
 
-@media (min-width: 1120px) {
   .grid {
     grid-template-columns: repeat(4, 2fr);
   }
 
-  .card-brands,
-  .card-equipment {
-    width: 240px;
-    box-sizing: border-box;
+  .content-card{
+    display: none;
   }
+
 }
