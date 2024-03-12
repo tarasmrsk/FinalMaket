@@ -712,6 +712,7 @@
   position: relative;
   background-color: #ffffff;
   border-radius: 6px;
+  box-sizing: border-box;
   border: 1px solid #eaeaea; }
 
 .card:hover {
@@ -746,8 +747,6 @@
   .swiper-slide {
     width: 240px;
     margin-left: 16px; }
-  .card-equipment {
-    width: 240px; }
   .slider-3 .swiper-slide {
     width: 260px;
     margin-left: 8px; }
@@ -756,17 +755,19 @@
   .button-mode {
     display: none; } }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1120px) {
+  .swiper-slide {
+    width: 224px; }
   .content-card {
     display: none; } }
 
 @media (min-width: 1120px) {
+  .swiper-slide {
+    width: 240px; }
   .grid {
     grid-template-columns: repeat(4, 2fr); }
-  .card-brands,
-  .card-equipment {
-    width: 240px;
-    box-sizing: border-box; } }
+  .content-card {
+    display: none; } }
 
 @font-face {
   font-family: TTLakes-Bold;
@@ -801,9 +802,6 @@
   display: flex;
   align-items: center;
   padding-left: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 224px;
   height: 72px; }
 
 .card-brands:before {
@@ -857,9 +855,6 @@
     display: flex; } }
 
 .card-equipment {
-  margin-left: auto;
-  margin-right: auto;
-  width: 224px;
   height: 160px; }
 
 .card-equipment:before {
