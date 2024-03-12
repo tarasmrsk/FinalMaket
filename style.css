@@ -749,7 +749,7 @@
     margin-left: 16px; }
   .slider-3 .swiper-slide {
     width: 260px;
-    margin-left: 8px; }
+    margin-left: 12px; }
   .content-table {
     display: none; }
   .button-mode {
@@ -918,12 +918,8 @@
     display: flex; } }
 
 .card-prices {
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 16px;
-  width: 260px;
-  height: 200px; }
+  height: 200px;
+  padding: 16px; }
 
 .table-prices {
   width: 100%;
