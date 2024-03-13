@@ -15,10 +15,10 @@
   flex-basis: 50%;
 }
 
-.article__text {
-  max-height: 160px;
-  overflow: hidden;
-}
+// .article__text {
+//   max-height: 160px;
+//   overflow: hidden;
+// }
 
 .article__read-more {
   margin: 16px 0 16px 0;
@@ -56,6 +56,34 @@
 
 .img__CPS {
   width: 100%;
+}
+
+@media (max-width: 767px) {
+
+  .article__text {
+    max-height: 90px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+
+  .article__text--all {
+    max-height: 100vh;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1120px){
+
+  .article__text {
+    max-height: 160px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+
+  .article__text--all {
+    max-height: 100vh;
+  }
+
 }
 
 @media screen and (min-width: 768px){

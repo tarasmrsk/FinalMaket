@@ -1,5 +1,3 @@
-@import 'fonts.scss';
-
 $primary-color: #f8f8f8;
 $secondary-color:#ffffff;
 $pink-color: #ff3e79;
@@ -11,6 +9,18 @@ $light-turquoise-color:#41F6D7;
 $pang-color:#b8ffec;
 $gainsborough:#DDDDDD;
 $cadet-blue-crayola:#B5B6BC;
+
+
+@import 'fonts.scss';
+
+@import 'swiper/swiper.scss';
+@import 'swiper/swiper-brands.scss';
+@import 'swiper/swiper-equipment.scss';
+@import 'swiper/swiper-prices.scss';
+
+@import 'mobile/mobile-header.scss';
+@import 'mobile/mobile-menu.scss';
+@import 'mobile/mobile-footer.scss';
 
 .body {
   max-width: 1440px;
