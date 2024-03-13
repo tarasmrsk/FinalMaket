@@ -6,7 +6,7 @@
 }
 
 .article {
-  padding: 0px 16px 0 16px;
+  padding: 0px 16px 16px 16px;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
@@ -14,11 +14,6 @@
   color: $black-blue-color;
   flex-basis: 50%;
 }
-
-// .article__text {
-//   max-height: 160px;
-//   overflow: hidden;
-// }
 
 .article__read-more {
   margin: 16px 0 16px 0;
