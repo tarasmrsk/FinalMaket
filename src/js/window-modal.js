@@ -7,11 +7,16 @@ let openBody= document.querySelector('.page');
 let openFeedback= document.querySelector('.feedback');
 let openCallback= document.querySelector('.callback');
 
+let body = document.querySelector('.body');
+
 for (let i = 0; i < btnChat.length; i++){
 btnChat[i].addEventListener('click', function (){
   openFeedback.classList.add('window-open'); 
   btnBackground.style.display = 'block';
-  openMobile.classList.remove('body__mobile-menu-open');  
+  openMobile.classList.remove('body__mobile-menu-open'); 
+  
+  body.classList.add('modal-open');
+
 })  
 }
 
@@ -20,6 +25,9 @@ btnCall[i].addEventListener('click', function (){
   openCallback.classList.add('window-open'); 
   btnBackground.style.display = 'block';
   openMobile.classList.remove('body__mobile-menu-open');  
+
+  body.classList.add('modal-open');
+
 })  
 }
 
@@ -29,6 +37,9 @@ for (let i = 0; i < btnCall.length; i++){
     openCallback.classList.remove('window-open');
     btnBackground.style.display = 'none';
     openBody.style.display = 'block';
+
+    body.classList.remove('modal-open');
+
   })  
 }
 
@@ -37,4 +48,7 @@ btnBackground.addEventListener('click', function (){
   openCallback.classList.remove('window-open');
   btnBackground.style.display = 'none';
   openBody.style.display = 'block';
+
+  body.classList.remove('modal-open');
+  
 });

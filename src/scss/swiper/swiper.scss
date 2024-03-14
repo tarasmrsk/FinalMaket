@@ -38,12 +38,12 @@
   background-color: $secondary-color;
   border-radius: 6px;
   box-sizing: border-box;
-  border: 1px solid $smoky-white-color
+  border: 1px solid $smoky-white-color;
 }
 
 .card:hover {
   cursor: pointer;
-  border: 1px solid $light-turquoise-color
+  border: 1px solid $light-turquoise-color;
 }
 
 .swiper-pagination-bullet {
@@ -54,66 +54,61 @@
 
 .swiper-pagination-bullet-active {
   background: $cadet-blue-crayola;
-} 
+}
 
 @media (max-width: 768px) {
   .swiper {
-      display: flex;
-      width: 320px;
-      height: 100%;
-      padding-bottom: 32px;
-    }
-  
-    .swiper::after {
-      content: '';
-      position: absolute;
-      width: 25px;
-      height: 100vh;
-      left: 296px;
-      z-index: 10;
-      background: linear-gradient(90deg, transparent, $primary-color);
-    }
-  
-    .swiper-wrapper {
-      display: flex;
-      gap: 0;
-    }
-  
-    .swiper-slide {
-      width: 240px;
-      margin-left: 16px;
-    }
-  
-    .slider-3 .swiper-slide {
-      width: 260px;
-      margin-left: 12px;
-    }
+    display: flex;
+    width: 320px;
+    height: 100%;
+    padding-bottom: 32px;
+  }
 
-    
-  
-    .content-table {
-      display: none;
-    }
-  
-    .button-mode {
-      display: none;
-    }
+  .swiper::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 100vh;
+    left: 296px;
+    z-index: 10;
+    background: linear-gradient(90deg, transparent, $primary-color);
+  }
 
+  .swiper-wrapper {
+    display: flex;
+    gap: 0;
+  }
+
+  .swiper-slide {
+    width: 240px;
+    margin-left: 16px;
+  }
+
+  .slider-3 .swiper-slide {
+    width: 260px;
+    margin-left: 12px;
+  }
+
+  .content-table {
+    display: none;
+  }
+
+  .button-mode {
+    display: none;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1120px){
-
+@media (min-width: 768px) and (max-width: 1120px) {
   .swiper-slide {
     width: 224px;
   }
 
-  .content-card{
+  .content-card {
     display: none;
   }
-
 }
 
-@media (min-width: 1120px){
+@media (min-width: 1120px) {
   .swiper-slide {
     width: 240px;
   }
@@ -122,8 +117,7 @@
     grid-template-columns: repeat(4, 2fr);
   }
 
-  .content-card{
+  .content-card {
     display: none;
   }
-
 }

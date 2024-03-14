@@ -32,6 +32,10 @@ $cadet-blue-crayola:#B5B6BC;
   overflow-x: hidden;
 }
 
+.body.modal-open {
+  overflow: hidden;
+}
+
 .page {
   background-color: $primary-color;
   background-size: 100%;
